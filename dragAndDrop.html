@@ -1,0 +1,31 @@
+<html  xml:lang="es" lang="es">
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<!-- css -->
+	<script type="text/javascript" src="dnd.js"> //Libreria mía. </script>
+	<link rel="stylesheet" type="text/css" href="dnd.css"/> 
+	<title> Drag and Drop  </title>
+</head>
+<body>
+	<form id="upload" action="" method="POST" enctype="multipart/form-data">
+		<fieldset>
+			<legend>HTML5 Subir ficheros mediante <i>drag and drop</i></legend>
+			<input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="300000" />
+			<div>
+				<!-- 
+				<label for="fileselect">Fichero a subir</label>
+				<input type="file" id="fileselect" name="fileselect[]" multiple="multiple" />
+				-->
+				<div id="filedrag">Arrastrar aquí</div>
+			</div>
+			<div id="submitbutton">
+				<button type="submit">Subir ficheros</button>
+			</div>
+		</fieldset>
+	</form>
+
+	<div id="messages">
+		<p><i>Mensaje de estado</i></p>
+	</div>
+</body>
+</html>
